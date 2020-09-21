@@ -11,7 +11,7 @@ if not os.path.isdir(directory): #This checks if the folder exists, if it does n
 def log_message(func):
         def write_to_file(*args, **kwargs):
            
-            result = func(*args, **kwargs) #Fuction stored in avariable and will be returned later
+            result = func(*args, **kwargs) #Fuction stored in a variable and will be returned later
             f =  open(file_path ,'a')
             f.write(result + "\n") #writes to file and a adds newline after the function is written to the file
             f.close()
